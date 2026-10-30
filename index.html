@@ -7,6 +7,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,15 +19,15 @@
     <!-- CABEÇALHO -->
     <header id="cabecalho">
 
-        <div class="container1">
+        <div class="container">
             <img class="logo" src="./img/logo.png" alt="">
         </div>
 
         <nav id="menu">
             <a href="#inicio">Inicio</a>
             <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#Conquistas">Conquistas</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#conquistas">Conquistas</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
@@ -31,7 +35,7 @@
 
     <!-- CONTEÚDO -->
     <main>
-            <div class="container2">
+            <div class="container2" id="inicio">
                 <div class="foto">
                     <img class="fotoPerfil" src="./img/foto.png" alt="">
                 </div>
@@ -41,7 +45,9 @@
                     <h1> Letícia de S. R. Nascimento</h1>
                     <h2> Analista de Dados | Excel Avançado, Dashboards e Relatórios Financeiros</h2>
                     <p>Transformo dados em informações estratégicas por meio de análises, automações e soluções inteligentes que facilitam decisões e otimizam resultados.</p>
-                    <a>botao</a> <a>botao</a>
+                    <a href="#sobre" class="botao-sobre">
+                    Saiba mais sobre mim →
+                    </a>
                 </div>
             </div>
 
@@ -49,51 +55,60 @@
 
             <div class="coluna-esquerda">
 
-            <div class="sobre-mim">
+            <div class="sobre-mim" id="sobre">
                 <h2>Sobre mim</h2>
                 <div class="sobre-conteudo">
                     <div class="sobre-texto">
-                        <p> apaixonado por tecnologia e desenvolvimento web.
-                            Tenho interesse em criar soluções que geram impacto positivo, usando design, funcionalidade
-                            e
-                            simplicidade.</p>
+                        <p> Analista de Dados com atuação em Excel avançado, dashboards e relatórios financeiros e administrativos. Experiência na organização, automação e análise de dados para apoio à tomada de decisão, com vivência em rotinas administrativas, financeiras e contábeis. Perfil analítico, organizado e orientado a resultados.</p>
+                        <p>Atualmente, estou estudando HTML e CSS e em constante evolução para me tornar uma profissional completa na área.</p>
 
-                        <p>Atualmente, estou estudando HTML e CSS e em constante evolução para me tornar um profissional
-                            completo na área.</p>
                     </div>
                     <div class="sobre-lista">
-                        <h3>
-                            <li>💡 Foco em Soluções</li>
-                            <li>📚 Aprendizado contínuo</li>
-                            <li>⚙️ Trabalho em equipe</li>
-                            <li>🎯 Atenção aos detalhes</li>
-                        </h3>
+                        <h3>Competências (Skills)</h3>
+                        <ul>
+                            <li>Excel Avançado e Power Query</li>
+                            <li>Análise e Tratamento de Dados</li>
+                            <li>Dashboards e Indicadores de Desempenho (KPIs)</li>
+                            <li>Automação de Relatórios</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="projetos">
-                <h2>Projetos</h2>
+            <div class="projetos" id="experiencia">
+                <h2>Experiência Profissional</h2>
                 <div class="lista-cards">
                     <article class="card">
                         <img>
-                        <h3>Site Institucional</h3>
-                        <p>Página completa para uma empresa ficticia com foco em apresentação e contato.</p>
-                        <a>Ver projeto</a>
+                        <h3>Analista de Dados / Excel</h3>
+                        <p>Atuação como freelancer no desenvolvimento de relatórios financeiros e administrativos em Excel, com foco em organização,
+                            automação e clareza das informações. Criação de dashboards e
+                            relatórios gerenciais utilizando fórmulas avançadas, tabelas
+                            dinâmicas, e Power query, apoiando a análise de resultados e a
+                            tomada de decisão.</p>
+                        <span class="card-data">Dez/2025 – Atual | Remoto</span>
                     </article>
 
                     <article class="card">
                         <img>
-                        <h3>Dashboard de Tarefas</h3>
-                        <p>Interface para organização de tarefas do dia a dias.</p>
-                        <a>Ver projeto</a>
+                        <h3>Auxiliar Contábil</h3>
+                        <p>Importação de dados para escrituração contábil no ERP TOTVS
+                            Protheus, integração e conferência dos lançamentos contábeis via
+                            Coneasy, análise e correção de duplicidades e inconsistências, uso
+                            de Excel com tabelas dinâmicas para análise de dados de estoque
+                            para apoio à apuração de tributos.</p>
+                        <span class="card-data">Dez/2024 – Jun/2025</span>
                     </article>
 
                     <article class="card">
                         <img>
-                        <h3>Blog de Viagens</h3>
-                        <p>Página de artigos com destinos e dicas de viagens.</p>
-                        <a>Ver projeto</a>
+                        <h3>Assistência Administrativa e Contábil – MEI</h3>
+                        <p>Escrituração contábil no ERP Domínio. Controle financeiro,
+                            atendimento aos clientes, desenvolvimento de planilhas em Excel
+                            para organização e integração das informações e elaboração de
+                            tutoriais e materiais de apoio para orientação de clientes em rotinas
+                            administrativas e contábeis</p>
+                        <span class="card-data">Mar/2022 – Nov/2024 | Remoto</span>
                     </article>
 
                 </div>
@@ -102,45 +117,32 @@
 
             <div class="coluna-direita">
 
-            <div class="container5">
-                <h2>Conquistas</h2>
+            <div class="container5" id="conquistas">
+                <h2>Formação Acadêmica</h2>
                 <div class="lista.cards2">
                     <article class="card1">
-                        <div class="numero">
-                            <h1>3</h1>
-                        </div>
-                        <h3>Projetos Concluidos</h3>
-                        <p>Desenvolvidos com HTML e CSS, aplicando os conhecimentos das aulas.</p>
+                        <h3>Bacharelado Ciências Contábeis - UNINTER</h3>
+                        <h3>Técnico em Administração - ETEC/SP</h3>
                     </article>
 
                     <article class="card1">
-                        <div class="numero">
-                            <h1>1º</h1>
-                        </div>
-                        <h3>Lugar no Desafio</h3>
-                        <p>Destaque no projeto da turma pela organização e criatividade</p>
-                    </article>
-
-                    <article class="card1">
-                        <div class="numero">
-                            <h1>+ 50</h1>
-                        </div>
-                        <h3>Horas de Estudo</h3>
-                        <p>Dedicadas ao desenvolvimento web e aprimoramento contínuo</p>
-                    </article>
-
+                        <h3>Cursos e Capacitações</h3>
+                        <p>Excel Avançado (Versão 2016) — SENAC (2018)</p>
+                        <p>Imersão Power BI Day — Doutores do Excel (2025)</p>
+                        <p>Lógica de Programação — SENAC (2026)</p>
+                        <p>Criação de Website: HTML e CSS — SENAC (2026)</p>
                 </div>
             </div>
 
-            <div class="container6">
+            <div class="container6" id="contato">
                 <h2>Contato</h2>
-                <div class="contato.info">
+                <div class="contato-info">
                     <p>Quer conversar sobre um projeto, parceria ou oportunidade?</p>
                     <p>Me envie uma mensagem</p>
                     <img>
-                    <a href="luciana@gmail.com">luciana@gmail.com</a>
-                    <a href="(11) 98765-4321">(11) 98765-4321</a>
-                    <p>São Paulo - SP</p>
+                    <a href="mailto:lethixas2@hotmail.com">lethixas2@hotmail.com</a>
+                    <a href="tel:+5519994712428">(19) 99471-2428</a>
+                    <p>Pato Branco - PR</p>
                 </div>
 </div>
         </div>
@@ -150,24 +152,24 @@
     <!-- RODAPÉ -->
     <footer id="rodape">
         <div class="container7">
-            <div class="rodape.marca">
-                <h1>NEXO</h1>
-                <h2>Tech</h2>
+            <div class="container1">
+            <img class="logo" src="./img/logo.png" alt="">
             </div>
 
             <nav class="rodape-menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#Conquistas">Conquistas</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#conquistas">Conquistas</a>
                 <a href="#contato">Contato</a>
             </nav>
 
-            <a href="#inicio">Voltar ao Topo</a>
-            <p>Copyright</p>
+            <div class="rodape-info">
+                <a href="#inicio">Voltar ao Topo</a>
+                <p>Copyright</p>
+            </div>
         </div>
     </footer>
-    </div>
 </body>
 
 </html>
